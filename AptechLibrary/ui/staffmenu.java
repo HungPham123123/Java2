@@ -128,7 +128,7 @@ public class staffmenu {
     private void ViewBorrowHistory() throws SQLException {
 
         System.out.print("Enter the book ID to view its borrow history: ");
-        int bookID = readInt(1, Integer.MAX_VALUE); // Modify the range as needed.
+        int bookID = readInt(1, Integer.MAX_VALUE); 
 
         book books = new book();
         books.setBookID(bookID);
@@ -146,7 +146,7 @@ public class staffmenu {
     private void UpdateBookStatus() throws SQLException {
         // Input the book ID
         System.out.print("Enter the Book ID: ");
-        int bookID = readInt(1, Integer.MAX_VALUE); // Modify the range as needed.
+        int bookID = readInt(1, Integer.MAX_VALUE); 
 
         boolean newBorrowStatus;
         while (true) {
